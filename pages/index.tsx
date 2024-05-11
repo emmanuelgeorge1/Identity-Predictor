@@ -20,7 +20,7 @@ export default function PredictionPage() {
    e.preventDefault();
     setLoading(true);
     try {
-      // Mock predictDetails function call
+      //predictDetails function call
       const predictionData: PredictionData = await predictDetails(name);
       setPrediction(predictionData);
     } catch (error) {
@@ -57,7 +57,7 @@ export default function PredictionPage() {
             style={{ width: '400px',height: '40px' }}
           />
           <button type="submit" disabled={loading} className="button"
-           style={{width: '150px',height: '40px' }} // Adjusted style
+           style={{width: '150px',height: '40px' }}
           >
             {loading ? 'Predicting...' : 'Predict'}
           </button>
